@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.8.0 on win32)" generated="20221130 08:59:33.538" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="D:\Album Baru\farmacare\test.robot">
+<test id="s1-t1" name="Buka Website">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.bookdepository.com/</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221130 08:59:33.889" level="INFO">Opening browser 'firefox' to base url 'https://www.bookdepository.com/'.</msg>
+<msg timestamp="20221130 08:59:34.103" level="INFO">Firefox driver log is always forced to to: D:\Album Baru\farmacare\geckodriver-6.log</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221130 08:59:37.234" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20221130 08:59:37.234" endtime="20221130 08:59:37.234"/>
+</kw>
+<msg timestamp="20221130 08:59:37.289" level="FAIL">SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</msg>
+<status status="FAIL" starttime="20221130 08:59:33.888" endtime="20221130 08:59:37.289"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221130 08:59:37.290" endtime="20221130 08:59:37.290"/>
+</kw>
+<status status="FAIL" starttime="20221130 08:59:33.887" endtime="20221130 08:59:37.291">SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</status>
+</test>
+<test id="s1-t2" name="Menampilkan urutan harga buku dari yang terendah ke tertinggi">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.bookdepository.com/</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221130 08:59:37.296" level="INFO">Opening browser 'firefox' to base url 'https://www.bookdepository.com/'.</msg>
+<msg timestamp="20221130 08:59:37.297" level="INFO">Firefox driver log is always forced to to: D:\Album Baru\farmacare\geckodriver-7.log</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221130 08:59:40.444" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20221130 08:59:40.443" endtime="20221130 08:59:40.444"/>
+</kw>
+<msg timestamp="20221130 08:59:40.449" level="FAIL">SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</msg>
+<status status="FAIL" starttime="20221130 08:59:37.296" endtime="20221130 08:59:40.450"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>/html/body/div[2]/div[2]/header/div[2]/div[4]/form/div[1]/input[1]</arg>
+<arg>buku</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221130 08:59:40.452" endtime="20221130 08:59:40.453"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>/html/body/div[2]/div[2]/header/div[2]/div[4]/form/div[1]/button</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20221130 08:59:40.455" endtime="20221130 08:59:40.456"/>
+</kw>
+<kw name="Page Should Contain buku">
+<status status="NOT RUN" starttime="20221130 08:59:40.476" endtime="20221130 08:59:40.477"/>
+</kw>
+<kw name="Press Keys /html/body/div[2]/div[5]/div[2]/div[3]/div[2]/form/select [Return]">
+<status status="NOT RUN" starttime="20221130 08:59:40.483" endtime="20221130 08:59:40.483"/>
+</kw>
+<kw name="Press Keys /html/body/div[2]/div[5]/div[2]/div[3]/div[2]/form/select/option[2] [Return]">
+<status status="NOT RUN" starttime="20221130 08:59:40.488" endtime="20221130 08:59:40.488"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221130 08:59:40.489" endtime="20221130 08:59:40.489"/>
+</kw>
+<status status="FAIL" starttime="20221130 08:59:37.295" endtime="20221130 08:59:40.490">SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</status>
+</test>
+<status status="FAIL" starttime="20221130 08:59:33.540" endtime="20221130 08:59:40.495"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
